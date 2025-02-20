@@ -1,0 +1,30 @@
+@use "../base/global" as *;
+
+.track {
+  &__item {
+    display: flex;
+    gap: rem(16);
+    flex-direction: column;
+    max-width: rem(250);
+
+    &:hover {
+      .track__item--logo {
+        background-color: $bg-yellow-50;
+      }
+
+      .track__description-title {
+        color: $text-green;
+      }
+    }
+
+    &--logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: rem(24);
+      background-color: $bg-gray-50;
+      transition: background-color 0.5s ease;
+      height: rem(250);
+    }
+  }
+}

@@ -1,0 +1,7 @@
+@use "../base/global" as *;
+
+#map {
+  width: 100%;
+  height: rem(1000);
+  border-radius:rem(8);
+}

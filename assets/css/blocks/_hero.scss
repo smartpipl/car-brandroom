@@ -1,0 +1,230 @@
+@use "../base/global" as *;
+
+
+
+.hero {
+  position: relative;
+  background-image:linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0) 80%, rgba(255, 255, 255, 1) 87%),
+  image-set(
+      url('/img/bg_image/hero_bg.webp') type("image/webp"),
+      url('/img/bg_image/hero_bg.png') type("image/png")
+  );
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include media(md) {
+    align-items: flex-start
+  }
+
+  &__content-desktop {
+    max-width: $container-max-width;
+    width: 100%;
+    padding: rem(64) rem(32);
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    @include media(md) {
+      display: none;
+    }
+  }
+
+  &__content-mobile {
+    display: none;
+    @include media(md) {
+      height: 100%;
+      max-width: $container-max-width;
+      padding: rem(104) rem(32) rem(64) rem(32);
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      z-index: 10;
+    }
+    @include media(sm) {
+      padding: rem(66) rem(16) rem(48) rem(16);
+    }
+  }
+
+  &__controls {
+    max-width: rem(392);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: rem(33);
+  }
+
+  &__controls-mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: rem(16);
+  }
+
+  &__user {
+    background-color: $bg-white;
+    border-radius: rem(24);
+    border: solid 1px $gray-100;
+    padding: rem(24);
+    max-width: rem(392);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: rem(33);
+    justify-content: space-between;
+    @include media(md) {
+      max-width: rem(1000);
+      margin-bottom: rem(32);
+    }
+    &--title{
+      display: flex;
+      flex-direction: column;
+      @include media(md) {
+        flex-direction: row;
+      }
+    }
+  }
+
+
+  &__buttons-group-tablet {
+
+    @include media(md) {
+      display: flex;
+      justify-content: space-between;
+      gap: rem(16);
+    }
+    @include media(sm) {
+      display: none;
+    }
+  }
+
+  &__buttons-group-mobile {
+    display: none;
+    @include media(sm) {
+      display: flex;
+      justify-content: space-between;
+      gap: rem(16);
+    }
+
+  }
+
+
+  &__user-data {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: rem(16);
+    @include media(sm) {
+      display: none;
+    }
+
+    &--item {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: rem(8);
+    }
+
+    &--separator {
+      width: rem(10);
+      background: linear-gradient(180deg, rgba(253, 185, 19, 0) 0%, #FDB913 50%, rgba(253, 185, 19, 0) 100%);
+    }
+  }
+
+  &__slider {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    @include media(md) {
+      bottom: rem(200);
+    }
+
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      z-index: 5;
+      background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 5%, rgba(0, 0, 0, 0) 57%);
+      @include media(md) {
+        display: none;
+      }
+    }
+
+    &--wrapper {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 100%;
+      position: relative;
+      will-change: transform;
+    }
+
+    &--slide {
+      min-width: 100%;
+      opacity: 0;
+      transition: all 0.5s ease-in-out;
+      display: flex;
+      justify-content: center;
+      scale: 0.2;
+      position: relative;
+
+      &.active {
+        transition: all 0.5s ease-in-out;
+        opacity: 1;
+        scale: 1;
+      }
+    }
+
+    &--title {
+      bottom: 0;
+      line-height: 1;
+      overflow: hidden;
+      width: 100%;
+      max-width: 100%;
+      position: absolute;
+      text-align: center;
+      z-index: -1;
+      font-size: calc($index * 15);
+      font-weight: 700;
+      text-transform: uppercase;
+      white-space: nowrap;
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+      @include media(md) {
+        display: none;
+      }
+    }
+
+
+    &--item {
+      width: calc($index * 27);
+      bottom: 0;
+      @include media(md) {
+        width: calc($index * 26);
+      }
+    }
+
+    img {
+
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+

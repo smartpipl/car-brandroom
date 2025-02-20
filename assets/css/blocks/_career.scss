@@ -1,0 +1,100 @@
+@use "../base/global" as *;
+
+
+
+.career {
+  &__header {
+    &--title {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__buttons-desktop {
+    display: flex;
+    gap: rem(16);
+    @include media(md) {
+      display: none;
+    }
+  }
+
+  &__buttons-mobile {
+    display: none;
+    @include media(md) {
+      display: flex;
+      gap: rem(16);
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__slider-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: max-content;
+  }
+
+  &__slide {
+    width:  rem(354);
+    padding:  rem(20);
+    box-sizing: border-box;
+    border-radius:rem(10) ;
+    margin-right: rem(20);
+
+    &--basic {
+      background-color: $bg-yellow-50;
+      border-radius: 1rem;
+      display: flex;
+      flex-direction: column;
+      padding: rem(20);
+      height: 100%;
+
+      h2 {
+        font-size: 4rem;
+        color: $text-yellow;
+      }
+    }
+
+    &--secondary {
+      position: relative;
+      padding-top: rem(48);
+      display: flex;
+      flex-direction: column;
+      gap: rem(8);
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: rem(16);
+        width: var(--before-width, rem(368));
+        background-color: $green-100;
+        height: 1px;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: rem(8);
+        left: 0;
+        width: rem(16);
+        height:rem(16);
+        border-radius: 50%;
+        background-color: $green-500;
+        box-shadow: 0 0 0 8px $bg-green-50;
+      }
+
+
+    }
+  }
+}
+
+
+
+
+

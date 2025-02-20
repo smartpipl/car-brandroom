@@ -1,0 +1,50 @@
+@use "../base/global" as *;
+
+
+.insta {
+  padding: 6rem 0;
+  @include media(md) {
+    padding: 4rem 0;
+  }
+  @include media(sm) {
+    padding: 2rem 0;
+  }
+
+  &__slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__slider-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: rem(20);
+  }
+
+  &__slide {
+    flex: 0 0 rem(354);
+    user-select: none;
+    cursor: grab;
+    width: rem(306);
+    //width: 100%;
+    height: rem(306);
+    border-radius: rem(24);
+    overflow: hidden;
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: rem(24);
+    margin-top: rem(56);
+    padding: 0 rem(16);
+  }
+}
+
+.insta-slide {
+
+  width: rem(306) !important;
+}

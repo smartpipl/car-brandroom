@@ -1,1 +1,11 @@
-
+.gitignore
+.idea
+assets/node_modules
+assets/dist
+pages
+package.json
+package-lock.json
+site.webmanifest
+webpack.common.js
+webpack.config.dev.js
+webpack.config.prod.js

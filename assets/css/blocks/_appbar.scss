@@ -1,0 +1,235 @@
+
+//@use "../base/variables" as *;
+//@use "../base/mixins" as *;
+//@use "../base/functions" as *;
+
+@use "../base/global" as *;
+
+.appbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $bg-white;
+  color: $text-black;
+  @include media(md) {
+    height: 4.5rem;
+  }
+  @include media(sm) {
+    height: 3.5rem;
+  }
+
+  &__container {
+    display: flex;
+    padding: 0 2rem;
+    max-width: $container-max-width;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__logo img {
+    height: rem(40);
+    @include media(sm) {
+      height: rem(32);
+    }
+  }
+
+  &__menu-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include media(md) {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: rem(280);
+      height: 100vh;
+      background: $bg-white;
+      box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: right 0.3s ease-in-out;
+      z-index: 100;
+    }
+
+    &.open {
+      right: 0;
+    }
+  }
+
+  &__menu {
+    list-style: none;
+    display: flex;
+    gap: rem(48);
+
+    a {
+      text-decoration: none;
+      color: $text-black;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $text-yellow;
+      }
+    }
+
+    @include media(xl) {
+      gap: rem(20);
+    }
+
+    @include media(md) {
+      flex-direction: column;
+      gap: rem(15);
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: rem(20);
+
+    a img {
+      transition: filter 0.3s ease;
+
+      &:hover {
+        filter: brightness(0) saturate(100%) invert(62%) sepia(67%) saturate(500%) hue-rotate(350deg);
+      }
+    }
+
+    @include media(md) {
+      display: none;
+    }
+  }
+}
+
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: rem(5);
+  z-index: 150;
+  position: relative;
+
+  span {
+    display: block;
+    width:  rem(30);
+    height:  rem(3);
+    background: $text-black;
+    transition: all 0.3s ease;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  pointer-events: none;
+  z-index: 50;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+}
+
+.appbar__logo-mobile{
+  display: none;
+  @include media(md) {
+    display: flex;
+    width: 100%;
+    padding: 0 rem(16);
+  }
+}
+
+.appbar__socials-stroke {
+  display: none;
+  @include media(md) {
+    display: flex;
+    height: rem(2);
+    max-width: rem(500);
+    width: 100%;
+    background-color: $bg-gray-200;
+  }
+}
+.appbar__socials-mobile {
+  display: none;
+  @include media(md) {
+    display: flex;
+    gap: rem(50);
+  }
+}
+
+@include media(md) {
+  .burger {
+    display: flex;
+  }
+
+  .appbar__menu {
+    gap: rem(50);
+  }
+
+  .appbar__menu-wrapper {
+    position: fixed;
+    display: flex;
+    top: 0;
+    right: -100%;
+    max-width: rem(500);
+    width:  100%;
+    height: 100vh;
+    background: $bg-white;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: right 0.3s ease-in-out;
+    z-index: 100;
+    text-align: center;
+    gap: rem(66);
+    padding: rem(8) 0 rem(24) 0 ;
+  }
+
+  .appbar__menu-wrapper.open {
+    right: 0;
+  }
+
+  .burger.open {
+    span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    span:nth-child(2) {
+      opacity: 0;
+    }
+
+    span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+}

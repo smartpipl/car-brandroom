@@ -1,0 +1,32 @@
+@use "../base/global" as *;
+
+.container-unfolding {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: rem(56);
+}
+
+.opening-container {
+  margin-top: rem(32);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: rem(32);
+  flex-direction: row;
+  width: 100%;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  max-height: var(--max-height);
+}
+
+#calendar {
+  --max-height: 364px;
+}
+
+@media (max-width: 486px) {
+  #calendar {
+    --max-height: 472px;
+  }
+}
+

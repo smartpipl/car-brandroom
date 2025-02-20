@@ -1,0 +1,98 @@
+@use '../base/global' as *;
+
+.button {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  background-color: $primary-green;
+  color: $text-white;
+  transition: all 0.5s ease;
+
+  img {
+    transition: filter 0.5s ease;
+  }
+
+  path {
+    transition: fill 0.5s ease;
+  }
+
+  &:hover {
+    background-color: $green-400;
+    color: $text-yellow;
+
+    path {
+      fill: $text-yellow;
+    }
+
+    img {
+      filter: invert(40%) sepia(100%) saturate(1000%) hue-rotate(10deg);
+    }
+  }
+
+  &:disabled {
+    background-color: $bg-gray-50;
+    border-color: $bg-gray-50;
+    color: $text-gray-400;
+    cursor: not-allowed;
+    path {
+      fill: $text-gray-400;
+    }
+  }
+
+
+
+  &.secondary {
+    min-width: rem(164);
+    background-color: $bg-white;
+    color: $text-black;
+    border: 1px solid $gray-100;
+
+    &__icon {
+      display: flex;
+      min-width: auto;
+      height: fit-content;
+    }
+
+    &:hover {
+      background-color: $bg-white;
+      color: $text-yellow;
+      border-color: $green-500;
+    }
+
+    &:disabled {
+      background-color: $bg-white;
+      color: $text-gray-400;
+      border: 1px solid $gray-100;
+      cursor: not-allowed;
+    }
+  }
+
+  &.small {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    line-height: rem(18);
+    min-width: auto;
+  }
+}
+
+.buttons-group {
+  display: flex;
+  gap: rem(24);
+  @include media(md) {
+    flex-direction: column;
+    gap: rem(15);
+  }
+}
+.buttons-group-icon {
+  display: flex;
+  gap: rem(24);
+}
+
