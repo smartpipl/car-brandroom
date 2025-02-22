@@ -8,7 +8,7 @@
             <div class="opening-container" id="cups-container" style="--max-height: 492px;">
 
                 <div class="cups__cup-item">
-                    <img src=".<?=get_template_directory_uri();?>/assets/img/icons/cup_icon/1st_2.svg" alt="">
+                    <img src="<?=get_template_directory_uri();?>/assets/img/icons/cup_icon/1st_2.svg" alt="">
                     <div class="cups__cup-item--content">
                         <img src="<?=get_template_directory_uri();?>/assets/img/icons/cup_icon/1place.svg" alt="">
                         <p class="subtitle1">"Fair Play Trophy by the Karting Association</p>
@@ -17,7 +17,7 @@
                 </div>
 
                 <div class="cups__cup-item">
-                    <img src=".<?=get_template_directory_uri();?>/assets/img/icons/cup_icon/1st_2.svg" alt="">
+                    <img src="<?=get_template_directory_uri();?>/assets/img/icons/cup_icon/1st_2.svg" alt="">
                     <div class="cups__cup-item--content">
                         <img src="<?=get_template_directory_uri();?>/assets/img/icons/cup_icon/1place.svg" alt="">
                         <p class="subtitle1">"Fair Play Trophy by the Karting Association</p>
@@ -26,7 +26,7 @@
                 </div>
 
                 <div class="cups__cup-item">
-                    <img src=".<?=get_template_directory_uri();?>/assets/img/icons/cup_icon/1st_2.svg" alt="">
+                    <img src="<?=get_template_directory_uri();?>/assets/img/icons/cup_icon/1st_2.svg" alt="">
                     <div class="cups__cup-item--content">
                         <img src="<?=get_template_directory_uri();?>/assets/img/icons/cup_icon/1place.svg" alt="">
                         <p class="subtitle1">"Fair Play Trophy by the Karting Association</p>
@@ -35,7 +35,7 @@
                 </div>
 
                 <div class="cups__cup-item">
-                    <img src=".<?=get_template_directory_uri();?>/assets/img/icons/cup_icon/1st_2.svg" alt="">
+                    <img src="<?=get_template_directory_uri();?>/assets/img/icons/cup_icon/1st_2.svg" alt="">
                     <div class="cups__cup-item--content">
                         <img src="<?=get_template_directory_uri();?>/assets/img/icons/cup_icon/1place.svg" alt="">
                         <p class="subtitle1">"Fair Play Trophy by the Karting Association</p>
@@ -44,7 +44,7 @@
                 </div>
 
                 <div class="cups__cup-item">
-                    <img src=".<?=get_template_directory_uri();?>/assets/img/icons/cup_icon/1st_2.svg" alt="">
+                    <img src="<?=get_template_directory_uri();?>/assets/img/icons/cup_icon/1st_2.svg" alt="">
                     <div class="cups__cup-item--content">
                         <img src="<?=get_template_directory_uri();?>/assets/img/icons/cup_icon/1place.svg" alt="">
                         <p class="subtitle1">"Fair Play Trophy by the Karting Association</p>
@@ -53,7 +53,7 @@
                 </div>
 
                 <div class="cups__cup-item">
-                    <img src=".<?=get_template_directory_uri();?>/assets/img/icons/cup_icon/1st_2.svg" alt="">
+                    <img src="<?=get_template_directory_uri();?>/assets/img/icons/cup_icon/1st_2.svg" alt="">
                     <div class="cups__cup-item--content">
                         <img src="<?=get_template_directory_uri();?>/assets/img/icons/cup_icon/1place.svg" alt="">
                         <p class="subtitle1">"Fair Play Trophy by the Karting Association</p>
@@ -62,7 +62,7 @@
                 </div>
 
                 <div class="cups__cup-item">
-                    <img src=".<?=get_template_directory_uri();?>/assets/img/icons/cup_icon/1st_2.svg" alt="">
+                    <img src="<?=get_template_directory_uri();?>/assets/img/icons/cup_icon/1st_2.svg" alt="">
                     <div class="cups__cup-item--content">
                         <img src="<?=get_template_directory_uri();?>/assets/img/icons/cup_icon/1place.svg" alt="">
                         <p class="subtitle1">"Fair Play Trophy by the Karting Association</p>
@@ -71,7 +71,7 @@
                 </div>
 
                 <div class="cups__cup-item">
-                    <img src=".<?=get_template_directory_uri();?>/assets/img/icons/cup_icon/1st_2.svg" alt="">
+                    <img src="<?=get_template_directory_uri();?>/assets/img/icons/cup_icon/1st_2.svg" alt="">
                     <div class="cups__cup-item--content">
                         <img src="<?=get_template_directory_uri();?>/assets/img/icons/cup_icon/1place.svg" alt="">
                         <p class="subtitle1">"Fair Play Trophy by the Karting Association</p>
@@ -80,7 +80,7 @@
                 </div>
 
                 <div class="cups__cup-item">
-                    <img src=".<?=get_template_directory_uri();?>/assets/img/icons/cup_icon/1st_2.svg" alt="">
+                    <img src="<?=get_template_directory_uri();?>/assets/img/icons/cup_icon/1st_2.svg" alt="">
                     <div class="cups__cup-item--content">
                         <img src="<?=get_template_directory_uri();?>/assets/img/icons/cup_icon/1place.svg" alt="">
                         <p class="subtitle1">"Fair Play Trophy by the Karting Association</p>

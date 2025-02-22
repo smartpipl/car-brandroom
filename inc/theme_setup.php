@@ -27,7 +27,9 @@ function cbr_register_styles()
 
 	wp_enqueue_style( 'main-old-styles', get_template_directory_uri() . '/dist/css/style.css' );
 
-    wp_enqueue_script('scripts', get_template_directory_uri() . '/dist/js/app.js', ['jquery'], null, true);
+    wp_enqueue_script('scripts', get_template_directory_uri() . '/assets/js/app.js', ['jquery'], null, true);
+    wp_enqueue_script('track', get_template_directory_uri() . '/assets/js/track.js', ['jquery'], null, true);
+    wp_enqueue_script('completedTrack', get_template_directory_uri() . '/assets/js/completedTrack.js', ['jquery'], null, true);
 
     wp_localize_script('cbr-main', 'ajaxurl', admin_url('admin-ajax.php'));
     $custom_css = "";

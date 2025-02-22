@@ -9,96 +9,96 @@
                 <div class="insta-slide swiper-slide ">
                     <div class="insta__slide">
                         <picture>
-                            <source srcset="<?=get_template_directory_uri();?>/assets/img/photo/insta<?=get_template_directory_uri();?>/assets/img_1.webp" type="image/webp">
-                            <img src="img/photo/insta<?=get_template_directory_uri();?>/assets/img_1.png" alt="" loading="lazy">
+                            <source srcset="<?=get_template_directory_uri();?>/assets/img/photo/insta_1.webp" type="image/webp">
+                            <img src="<?=get_template_directory_uri();?>/assets/img/photo/insta_1.png" alt="" loading="lazy">
                         </picture>
                     </div>
                 </div>
                 <div class="insta-slide swiper-slide">
                     <div class="insta__slide">
                         <picture>
-                            <source srcset="<?=get_template_directory_uri();?>/assets/img/photo/insta<?=get_template_directory_uri();?>/assets/img_2.webp" type="image/webp">
-                            <img src="img/photo/insta<?=get_template_directory_uri();?>/assets/img_2.png" alt="" loading="lazy">
+                            <source srcset="<?=get_template_directory_uri();?>/assets/img/photo/insta_2.webp" type="image/webp">
+                            <img src="<?=get_template_directory_uri();?>/assets/img/photo/insta_2.png" alt="" loading="lazy">
                         </picture>
                     </div>
                 </div>
                 <div class="insta-slide swiper-slide">
                     <div class="insta__slide">
                         <picture>
-                            <source srcset="<?=get_template_directory_uri();?>/assets/img/photo/insta<?=get_template_directory_uri();?>/assets/img_3.webp" type="image/webp">
-                            <img src="img/photo/insta<?=get_template_directory_uri();?>/assets/img_3.png" alt="" loading="lazy">
+                            <source srcset="<?=get_template_directory_uri();?>/assets/img/photo/insta_3.webp" type="image/webp">
+                            <img src="<?=get_template_directory_uri();?>/assets/img/photo/insta_3.png" alt="" loading="lazy">
                         </picture>
                     </div>
                 </div>
                 <div class="insta-slide swiper-slide">
                     <div class="insta__slide">
                         <picture>
-                            <source srcset="<?=get_template_directory_uri();?>/assets/img/photo/insta<?=get_template_directory_uri();?>/assets/img_4.webp" type="image/webp">
-                            <img src="img/photo/insta<?=get_template_directory_uri();?>/assets/img_4.png" alt="" loading="lazy">
+                            <source srcset="<?=get_template_directory_uri();?>/assets/img/photo/insta_4.webp" type="image/webp">
+                            <img src="<?=get_template_directory_uri();?>/assets/img/photo/insta_4.png" alt="" loading="lazy">
                         </picture>
                     </div>
                 </div>
                 <div class="insta-slide swiper-slide">
                     <div class="insta__slide">
                         <picture>
-                            <source srcset="<?=get_template_directory_uri();?>/assets/img/photo/insta<?=get_template_directory_uri();?>/assets/img_5.webp" type="image/webp">
-                            <img src="img/photo/insta<?=get_template_directory_uri();?>/assets/img_5.png" alt="" loading="lazy">
+                            <source srcset="<?=get_template_directory_uri();?>/assets/img/photo/insta_5.webp" type="image/webp">
+                            <img src="<?=get_template_directory_uri();?>/assets/img/photo/insta_5.png" alt="" loading="lazy">
                         </picture>
                     </div>
                 </div>
                 <div class="insta-slide swiper-slide">
                     <div class="insta__slide">
                         <picture>
-                            <source srcset="<?=get_template_directory_uri();?>/assets/img/photo/insta<?=get_template_directory_uri();?>/assets/img_6.webp" type="image/webp">
-                            <img src="img/photo/insta<?=get_template_directory_uri();?>/assets/img_6.png" alt="" loading="lazy">
+                            <source srcset="<?=get_template_directory_uri();?>/assets/img/photo/insta_6.webp" type="image/webp">
+                            <img src="<?=get_template_directory_uri();?>/assets/img/photo/insta_6.png" alt="" loading="lazy">
                         </picture>
                     </div>
                 </div>
                 <div class="insta-slide swiper-slide ">
                     <div class="insta__slide">
                         <picture>
-                            <source srcset="<?=get_template_directory_uri();?>/assets/img/photo/insta<?=get_template_directory_uri();?>/assets/img_1.webp" type="image/webp">
-                            <img src="img/photo/insta<?=get_template_directory_uri();?>/assets/img_1.png" alt="" loading="lazy">
+                            <source srcset="<?=get_template_directory_uri();?>/assets/img/photo/insta_1.webp" type="image/webp">
+                            <img src="<?=get_template_directory_uri();?>/assets/img/photo/insta_1.png" alt="" loading="lazy">
                         </picture>
                     </div>
                 </div>
                 <div class="insta-slide swiper-slide">
                     <div class="insta__slide">
                         <picture>
-                            <source srcset="<?=get_template_directory_uri();?>/assets/img/photo/insta<?=get_template_directory_uri();?>/assets/img_2.webp" type="image/webp">
-                            <img src="img/photo/insta<?=get_template_directory_uri();?>/assets/img_2.png" alt="" loading="lazy">
+                            <source srcset="<?=get_template_directory_uri();?>/assets/img/photo/insta_2.webp" type="image/webp">
+                            <img src="<?=get_template_directory_uri();?>/assets/img/photo/insta_2.png" alt="" loading="lazy">
                         </picture>
                     </div>
                 </div>
                 <div class="insta-slide swiper-slide">
                     <div class="insta__slide">
                         <picture>
-                            <source srcset="<?=get_template_directory_uri();?>/assets/img/photo/insta<?=get_template_directory_uri();?>/assets/img_3.webp" type="image/webp">
-                            <img src="img/photo/insta<?=get_template_directory_uri();?>/assets/img_3.png" alt="" loading="lazy">
+                            <source srcset="<?=get_template_directory_uri();?>/assets/img/photo/insta_3.webp" type="image/webp">
+                            <img src="<?=get_template_directory_uri();?>/assets/img/photo/insta_3.png" alt="" loading="lazy">
                         </picture>
                     </div>
                 </div>
                 <div class="insta-slide swiper-slide">
                     <div class="insta__slide">
                         <picture>
-                            <source srcset="<?=get_template_directory_uri();?>/assets/img/photo/insta<?=get_template_directory_uri();?>/assets/img_4.webp" type="image/webp">
-                            <img src="img/photo/insta<?=get_template_directory_uri();?>/assets/img_4.png" alt="" loading="lazy">
+                            <source srcset="<?=get_template_directory_uri();?>/assets/img/photo/insta_4.webp" type="image/webp">
+                            <img src="<?=get_template_directory_uri();?>/assets/img/photo/insta_4.png" alt="" loading="lazy">
                         </picture>
                     </div>
                 </div>
                 <div class="insta-slide swiper-slide">
                     <div class="insta__slide">
                         <picture>
-                            <source srcset="<?=get_template_directory_uri();?>/assets/img/photo/insta<?=get_template_directory_uri();?>/assets/img_5.webp" type="image/webp">
-                            <img src="img/photo/insta<?=get_template_directory_uri();?>/assets/img_5.png" alt="" loading="lazy">
+                            <source srcset="<?=get_template_directory_uri();?>/assets/img/photo/insta_5.webp" type="image/webp">
+                            <img src="<?=get_template_directory_uri();?>/assets/img/photo/insta_5.png" alt="" loading="lazy">
                         </picture>
                     </div>
                 </div>
                 <div class="insta-slide swiper-slide">
                     <div class="insta__slide">
                         <picture>
-                            <source srcset="<?=get_template_directory_uri();?>/assets/img/photo/insta<?=get_template_directory_uri();?>/assets/img_6.webp" type="image/webp">
-                            <img src="img/photo/insta<?=get_template_directory_uri();?>/assets/img_6.png" alt="" loading="lazy">
+                            <source srcset="<?=get_template_directory_uri();?>/assets/img/photo/insta_6.webp" type="image/webp">
+                            <img src="<?=get_template_directory_uri();?>/assets/img/photo/insta_6.png" alt="" loading="lazy">
                         </picture>
                     </div>
                 </div>

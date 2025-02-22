@@ -41,7 +41,7 @@
                 <div class="profile__item--photo">
                     <picture>
                         <source srcset="<?=get_template_directory_uri();?>/assets/img/photo/profile_1.webp" type="image/webp">
-                        <img class="img-responsive" src="img/photo/profile_1.png" alt="profile photo" loading="lazy">
+                        <img class="img-responsive" src="<?=get_template_directory_uri();?>/assets/img/photo/profile_1.png" alt="profile photo" loading="lazy">
                     </picture>
                 </div>
 
