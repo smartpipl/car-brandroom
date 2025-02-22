@@ -1,0 +1,82 @@
+@use "../base/global" as *;
+
+
+.timer {
+  background-image: image-set(
+      url('/img/bg_image/timer_bg.webp') type("image/webp"),
+      url("/img/bg_image/timer_bg.png") type("image/png")
+  );
+
+  background-size: 100% auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+
+  @include media(md) {
+    background-size: 150% auto;
+  }
+  @include media(sm) {
+    background-size: 310% auto;
+  }
+
+  &__header {
+    &--title {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__image {
+    margin: 0 auto;
+    display: flex;
+    max-width: rem(1382);
+    width: 100%;
+  }
+
+  &__countdown {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 2em;
+    gap: rem(24);
+    flex-wrap: wrap;
+  }
+
+  &__timer-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__separator {
+    font-size: 3em;
+    @include media(sm) {
+      font-size: 1.5em;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+@include media(xs) {
+  .timer__countdown {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .timer__timer-block:nth-child(n+4),
+  .timer__separator:nth-child(n+4) {
+    order: 1;
+  }
+
+  .timer__timer-block:nth-child(n+4) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,94 @@
+@use "../base/global" as *;
+
+.footer {
+  background-color: $bg-black;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    @include media(lg) {
+      flex-direction: column;
+      gap: rem(15);
+    }
+  }
+
+  &__logo img {
+    height: rem(40);
+    @include media(sm) {
+      height: rem(32);
+    }
+  }
+  &__stripe {
+    background-color: $bg-gray-200;
+    height: 1px;
+    width: 100%;
+    margin: rem(32) 0;
+  }
+
+  &__menu {
+    display: flex;
+    gap: rem(48);
+
+    a {
+      text-decoration: none;
+      color: $text-white;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $text-yellow;
+      }
+    }
+
+    @include media(sm) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: rem(20);
+
+
+    a img {
+      transition: filter 0.3s ease;
+      filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg);
+
+      &:hover {
+        filter: brightness(0) saturate(100%) invert(62%) sepia(67%) saturate(500%) hue-rotate(350deg);
+      }
+    }
+  }
+
+  &__policy {
+    display: flex;
+    gap: rem(10);
+    color: $text-white;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 0.8rem;
+    @include media(sm) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__policy-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: rem(23);
+    @include media(sm) {
+      margin: 0 auto;
+      justify-content: center;
+      max-width: rem(311);
+      width: 100%;
+    }
+  }
+}

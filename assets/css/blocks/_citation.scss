@@ -1,0 +1,21 @@
+@use "../base/global" as *;
+
+.citation {
+  background-image: linear-gradient(360deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 50%, #FFFFFF 100%),
+  image-set(
+      url('/img/bg_image/citation_bg.webp') type("image/webp"),
+      url('/img/bg_image/citation_bg.png') type("image/png")
+  );
+
+  background-size: cover;
+  background-position: center;
+
+  &__content {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: rem(32);
+    max-width: rem(921);
+  }
+}

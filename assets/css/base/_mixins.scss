@@ -1,0 +1,38 @@
+@use "functions" as *;
+@use "variables" as *;
+
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@mixin media($size) {
+  @if $size == xs {
+    @media (max-width: #{$breakpoint-xs}) {
+      @content;
+    }
+  } @else if $size == sm {
+    @media (max-width: #{$breakpoint-sm}) {
+      @content;
+    }
+  } @else if $size == md {
+    @media (max-width: #{$breakpoint-md}) {
+      @content;
+    }
+  } @else if $size == lg {
+    @media (max-width: #{$breakpoint-lg}) {
+      @content;
+    }
+  } @else if $size == xl {
+    @media (max-width: #{$breakpoint-xl}) {
+      @content;
+    }
+  } @else if $size == xxl {
+    @media (max-width: #{$breakpoint-xxl}) {
+      @content;
+    }
+  }
+}
