@@ -1,8 +1,8 @@
 <section class="calendar">
     <div class="container">
         <div class="container-header">
-            <p class="overline--32 color-yellow">Race calendar</p>
-            <h3>Official competition schedule</h3>
+            <p class="overline--32 color-yellow"><?=get_field('calendar_title');?></p>
+            <h3><?=get_field('calendar_subtitle');?></h3>
         </div>
         <div class="calendar__filter-button">
             <button class="button small w-100" id="filter_button">Filter</button>
@@ -325,7 +325,7 @@
                 </div>
             </div>
             <div>
-                <button id="view-calendar" class="button secondary">View all cups</button>
+                <button id="view-calendar" class="button secondary"><?=get_field('calendar_view_all_cups_btn');?></button>
             </div>
         </div>
     </div>

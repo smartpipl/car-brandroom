@@ -1,8 +1,8 @@
 <section id="social" class="insta">
     <div>
         <div class="container-header">
-            <p class="overline--32 color-yellow">instaGram life style</p>
-            <h3>Career moments on social media</h3>
+            <p class="overline--32 color-yellow"><?=get_field('social_title');?></p>
+            <h3><?=get_field('social_subtitle');?></h3>
         </div>
         <div class="swiper insta-slider">
             <div class="swiper-wrapper">

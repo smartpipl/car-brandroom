@@ -1,8 +1,8 @@
 <section id="track" class="track">
     <div class="container">
         <div class="container-header">
-            <p class="overline--32 color-yellow">Racing arenas</p>
-            <h3>Legendary race tracks</h3>
+            <p class="overline--32 color-yellow"><?=get_field('track_title');?></p>
+            <h3><?=get_field('track_subtitle');?></h3>
         </div>
         <div class="container-unfolding">
             <div class="opening-container" id="track-container" style="--max-height: 364px;">

@@ -3,25 +3,16 @@
         <div class="offer__wrapper">
             <div class="offer__description">
                 <div class="offer__description-text">
-                    <h3>Support the talent that makes motorsport history! </h3>
-                    <p class="body1">Sponsoring a driver is an opportunity for your brand to become visible on the international
-                        racing scene, increase your reputation and attract new customers. Placing a logo on a car, helmet or
-                        racing
-                        suit is not just advertising, but an emotional connection with the passion for speed and the spirit of
-                        victory.
-                    </p>
+                    <h3><?=get_field('offer_title');?></h3>
+                    <p class="body1"><?=get_field('offer_text');?></p>
                     <div>
-                        <p class="subtitle1">Benefits for sponsors:</p>
-                        <ul>
-                            <li>Increased brand awareness through media coverage.</li>
-                            <li>Participation in events and promotions with your rider.</li>
-                            <li>Positioning your business as an ambassador of innovation and sports support.</li>
-                        </ul>
+                        <p class="subtitle1"><?=get_field('offer_subtitle');?></p>
+                        <?=get_field('offer_text_2');?>
                     </div>
-                    <p class="subtitle1">Make your brand a part of the champion team today!</p>
+                    <p class="subtitle1"><?=get_field('offer_text_3');?></p>
                 </div>
                 <div>
-                    <button class="button">Become a partner</button>
+                    <button class="button"><?=get_field('offer_text_4');?></button>
                 </div>
             </div>
             <div class="offer__image">
