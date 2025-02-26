@@ -1,9 +1,9 @@
 <section class="timer">
     <div class="container">
         <div class="timer__header">
-            <p class="overline--32 color-yellow">next race</p>
+            <p class="overline--32 color-yellow"><?=get_field('timer_title');?></p>
             <div class="timer__header--title">
-                <h3>PF International Kart Circuit</h3>
+                <h3><?=get_field('timer_subtitle');?></h3>
             </div>
             <p class="body1">25 april 2024</p>
             <p class="body1">🇺🇸 United States, New Castle Motorsports Park</p>

@@ -136,7 +136,7 @@
                 <div class="hero__slider--item">
                     <picture>
                         <source srcset="<?=get_template_directory_uri();?>/assets/img/photo/markas.webp" type="image/webp">
-                        <img src=".<?=get_template_directory_uri();?>/assets/img/photo/markas.png" alt="Markas Silkunas" loading="lazy">
+                        <img src="<?=get_template_directory_uri();?>/assets/img/photo/markas.png" alt="Markas Silkunas" loading="lazy">
                     </picture>
                 </div>
             </div>
@@ -147,7 +147,7 @@
                 <div class="hero__slider--item">
                     <picture>
                         <source srcset="<?=get_template_directory_uri();?>/assets/img/photo/vanesa1.webp" type="image/webp">
-                        <img src=".<?=get_template_directory_uri();?>/assets/img/photo/vanesa1.png" alt="Another Racer" loading="lazy">
+                        <img src="<?=get_template_directory_uri();?>/assets/img/photo/vanesa1.png" alt="Another Racer" loading="lazy">
                     </picture>
                 </div>
             </div>

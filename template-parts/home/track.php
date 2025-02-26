@@ -1,12 +1,12 @@
 <section id="track" class="track">
     <div class="container">
         <div class="container-header">
-            <p class="overline--32 color-yellow">Racing arenas</p>
-            <h3>Legendary race tracks</h3>
+            <p class="overline--32 color-yellow"><?=get_field('track_title');?></p>
+            <h3><?=get_field('track_subtitle');?></h3>
         </div>
         <div class="container-unfolding">
             <div class="opening-container" id="track-container" style="--max-height: 364px;">
-                <a href="/pages/tracks.html" class="track__item">
+                <a href="<?=get_permalink(95);?>" class="track__item">
                     <div class="track__item--logo">
                         <svg width="215" height="142" viewBox="0 0 215 142" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -21,7 +21,7 @@
                         </div>
                     </div>
                 </a>
-                <a  href="/pages/tracks.html" class="track__item">
+                <a  href="<?=get_permalink(95);?>" class="track__item">
                     <div class="track__item--logo">
                         <svg width="215" height="142" viewBox="0 0 215 142" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -36,7 +36,7 @@
                         </div>
                     </div>
                 </a>
-                <a  href="/pages/tracks.html" class="track__item">
+                <a  href="<?=get_permalink(95);?>" class="track__item">
                     <div class="track__item--logo">
                         <svg width="215" height="142" viewBox="0 0 215 142" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -51,7 +51,7 @@
                         </div>
                     </div>
                 </a>
-                <a  href="/pages/tracks.html" class="track__item">
+                <a  href="<?=get_permalink(95);?>" class="track__item">
                     <div class="track__item--logo">
                         <svg width="215" height="142" viewBox="0 0 215 142" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -66,7 +66,7 @@
                         </div>
                     </div>
                 </a>
-                <a  href="/pages/tracks.html" class="track__item">
+                <a  href="<?=get_permalink(95);?>" class="track__item">
                     <div class="track__item--logo">
                         <svg width="215" height="142" viewBox="0 0 215 142" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -81,7 +81,7 @@
                         </div>
                     </div>
                 </a>
-                <a  href="/pages/tracks.html" class="track__item">
+                <a  href="<?=get_permalink(95);?>" class="track__item">
                     <div class="track__item--logo">
                         <svg width="215" height="142" viewBox="0 0 215 142" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
