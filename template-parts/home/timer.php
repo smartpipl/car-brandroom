@@ -10,8 +10,8 @@
         </div>
         <div class="timer__image">
             <picture>
-                <source srcset="<?=get_template_directory_uri();?>/assets/img/photo/timer_1.webp" type="image/webp">
-                <img class="img-responsive" src="img/photo/timer_1.png" alt="timer" loading="lazy">
+                <source srcset="<?=get_template_directory_uri();?>/dist/img/photo/timer_1.webp" type="image/webp">
+                <img class="img-responsive" src="<?=get_template_directory_uri();?>/dist/img/photo/timer_1.png" alt="timer" loading="lazy">
             </picture>
         </div>
         <div class="timer__countdown">

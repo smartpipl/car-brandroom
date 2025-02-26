@@ -25,7 +25,7 @@
                         <p class="body1--700"><?=get_field('contact_text_5');?></p>
                     </div>
                     <a href="https://contribee.com/silkunasracing" target="_blank" class="contact__support-img">
-                        <img class="img-responsive" src="<?=get_template_directory_uri();?>/assets/img/qr_code/qr_code.png" alt="QR Code" loading="lazy">
+                        <img class="img-responsive" src="<?=get_field('contact_qr_code');?>" alt="QR Code" loading="lazy">
                     </a>
 
                 </div>

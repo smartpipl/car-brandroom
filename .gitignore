@@ -1,9 +1,5 @@
 .gitignore
 .idea
-assets/node_modules
-node_modules
-dist
-pages
 package.json
 package-lock.json
 site.webmanifest

@@ -5,8 +5,23 @@
             <h3><?=get_field('partners_title_2');?></h3>
         </div>
         <div class="container-unfolding">
-            <div class="opening-container" id="partners-container" style="--max-height: 364px;">
-                <div class="partners__item">
+            <div class="opening-container" id="partners-container" style="--max-height: 364px;"><?php
+                $partners = get_field('partners_list');
+                foreach($partners as $partner){
+                    echo '<div class="partners__item">
+                        <div class="partners__item--logo"><img src="'.$partner['image'].'"></div>
+                        <div class="partners__item--description">
+                            <p class="body2">'.get_field('partners_your_promo').'</p>
+                            <div class="copy-wrapper w-100">
+                                <label class="w-100" style="position: relative;">
+                                    <input class="input" type="text" value="'.$partner['title'].'" readonly>';
+                                    echo get_template_part('assets/svg/copy-btn');
+                                echo '</label>
+                            </div>
+                        </div>
+                    </div>';
+                }
+                ?><div class="partners__item">
                     <div class="partners__item--logo">
                         <?=get_template_part('assets/svg/partner-logo1');?>
                     </div>

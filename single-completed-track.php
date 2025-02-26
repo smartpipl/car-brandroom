@@ -5,6 +5,15 @@
 
 get_header(); ?>
 
+<style>
+    .page-content{
+        color: #7f7f7f;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+    }
+</style>
+
 <main>
     <section class="track-page">
         <div class="container">
@@ -13,9 +22,8 @@ get_header(); ?>
                     <p class="overline--32 color-yellow">Championships</p>
                     <h3><?=get_the_title();?></h3>
                 </div>
-                <div>
-                    <p class="body1 color-gray">One of the most anticipated events of the season, bringing together the world's best kart racers at the legendary British track. This track, known for its high-speed sections and technical cornering, is a real test for drivers' skills.</p>
-                    <p class="body1 color-gray">In 2024, the competition will be fiercely contested, as the participants will compete not only for victory in a single race, but also for important points in the overall standings. Race fans will be able to watch spectacular overtaking, strategic decisions and unpredictable turns of events.</p>
+                <div class="page-content">
+                    <?=get_the_content();?>
                 </div>
                 <div class="track-page__info">
                     <div class="track-page__info--item">
@@ -24,7 +32,7 @@ get_header(); ?>
                                 Driver:
                             </p>
                             <p class="body1--700">
-                                Markas Silkunas
+                                <?=get_field('race_driver');?>
                             </p>
                         </div>
                         <div>
@@ -32,7 +40,7 @@ get_header(); ?>
                                 Track:
                             </p>
                             <p class="body1--700">
-                                New Castle Motorsports Park
+                                <?=get_field('race_track');?>
                             </p>
                         </div>
                     </div>
@@ -42,7 +50,7 @@ get_header(); ?>
                                 Country:
                             </p>
                             <p class="body1--700">
-                                🇱🇹 Lithuania
+                                <?=get_field('race_country');?>
                             </p>
                         </div>
                         <div>
@@ -50,7 +58,7 @@ get_header(); ?>
                                 Track:
                             </p>
                             <p class="body1--700">
-                                New Castle Motorsports Park
+                                <?=get_field('race_track_2');?>
                             </p>
                         </div>
                     </div>
@@ -60,7 +68,7 @@ get_header(); ?>
                                 Best time:
                             </p>
                             <p class="body1--700">
-                                00:12:11
+                                <?=get_field('race_best_time');?>
                             </p>
                         </div>
                         <div>
@@ -68,7 +76,7 @@ get_header(); ?>
                                 Awards:
                             </p>
                             <p class="body1--700">
-                                🥇’24 1st place
+                                <?=get_field('race_awards');?>
                             </p>
                         </div>
 
@@ -78,8 +86,8 @@ get_header(); ?>
         </div>
         <div class="container">
             <div class="completed-track__content">
-                <img class="img-responsive" src="<?=get_template_directory_uri();?>/assets/img/photo/race-track-1.png" alt="track" loading="lazy">
-                <a  href="/pages/tracks.html" class=" button">About track</a>
+                <img class="img-responsive" src="<?=get_field('race_image');?>" alt="track" loading="lazy">
+                <a href="<?=get_permalink(get_field('race_track_link'));?>" class=" button">About track</a>
             </div>
         </div>
         <div class="container">
@@ -87,28 +95,14 @@ get_header(); ?>
                 <p class="overline--32 color-yellow">Media content</p>
                 <h3>Gallery of the best moments</h3>
             </div>
-            <div class="media-container">
-                <div class="media-container__item">
-                    <img src="<?=get_template_directory_uri();?>/assets/img/social_photo/img_1.png" alt="photo" loading="lazy">
-                </div>
-                <div class="media-container__item">
-                    <img src="<?=get_template_directory_uri();?>/assets/img/social_photo/img_2.png" alt="photo" loading="lazy">
-                </div>
-                <div class="media-container__item">
-                    <img src="<?=get_template_directory_uri();?>/assets/img/social_photo/img_3.png" alt="photo" loading="lazy">
-                </div>
-                <div class="media-container__item">
-                    <img src="<?=get_template_directory_uri();?>/assets/img/social_photo/img_4.png" alt="photo" loading="lazy">
-                </div>
-                <div class="media-container__item">
-                    <img src="<?=get_template_directory_uri();?>/assets/img/social_photo/img_5.png" alt="photo" loading="lazy">
-                </div>
-                <div class="media-container__item">
-                    <img src="<?=get_template_directory_uri();?>/assets/img/social_photo/img_6.png" alt="photo" loading="lazy">
-                </div>
-                <div class="media-container__item">
-                    <img src="<?=get_template_directory_uri();?>/assets/img/social_photo/img_7.png" alt="photo" loading="lazy">
-                </div>
+            <div class="media-container"><?php
+                $race_images = get_field('race_images');
+                foreach($race_images as $img){
+                    echo ' <div class="media-container__item">
+                        <img src="'.$img.'" alt="photo" loading="lazy">
+                    </div>';
+                }
+                ?>
             </div>
         </div>
     </section>

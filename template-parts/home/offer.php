@@ -17,8 +17,7 @@
             </div>
             <div class="offer__image">
                 <picture>
-                    <source srcset="<?=get_template_directory_uri();?>/assets/img/photo/kart_1.webp" type="image/webp">
-                    <img class="offer__image--img" src="<?=get_template_directory_uri();?>/assets/img/photo/kart_1.png" alt="kart_1" loading="lazy">
+                    <img class="offer__image--img" src="<?=get_field('offer_img');?>" alt="kart_1" loading="lazy">
                 </picture>
             </div>
         </div>
