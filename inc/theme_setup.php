@@ -25,7 +25,7 @@ function cbr_register_styles()
 {
     wp_enqueue_style( 'styles', get_stylesheet_uri() );
 
-    wp_enqueue_style( 'main-styles', get_template_directory_uri() . '/dist//main.css' );
+    wp_enqueue_style( 'main-styles', get_template_directory_uri() . '/dist/main.css' );
 
     wp_enqueue_script('main-scripts', get_template_directory_uri() . '/dist/main.js', ['jquery'], null, true);
 
