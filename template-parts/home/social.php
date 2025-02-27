@@ -8,7 +8,7 @@
             <div class="swiper-wrapper"><?php
                 $soc_images = get_field('social_images');
                 foreach($soc_images as $img){
-                    echo '<div class="insta-slide swiper-slide ">
+                echo '<div class="insta-slide swiper-slide ">
                         <div class="insta__slide">
                             <picture>
                                 <img src="'.$img.'" alt="" loading="lazy">

@@ -8,8 +8,8 @@
                 they give it their all to become the best, mastering every turn with millimeter accuracy.
             </h6>
             <div class="buttons-group">
-                <button id="prev" class="button secondary ">Markas</button>
-                <button id="next" class="button secondary ">Vanesa</button>
+                <a href="<?=get_permalink(2);?>" id="prev" class="button secondary ">Markas</a>
+                <a href="<?=get_permalink(265);?>" id="next" class="button secondary ">Vanesa</a>
             </div>
             <h6 class="body1 color-red">
                 Use the slider buttons to see the characteristics, history, and style of each rider and make your choice for

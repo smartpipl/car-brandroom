@@ -24,77 +24,29 @@
             </div>
         </div>
         <div class="career__slider">
-            <div class="career__slider-content">
-                <div class="career__slide active">
-                    <div class="career__slide--basic">
-                        <h2>2024</h2>
-                        <h6 class="color-green">Racing</h6>
-                        <h6 class="color-red">Season</h6>
-                    </div>
-                </div>
-                <div class="career__slide">
-                    <div class="career__slide--secondary">
-                        <h6>Debut in the CIK-FIA World Series</h6>
-                        <p class="body2">Markas made his debut in the final stage of the CIK-FIA World Series, finishing in
-                            the top 10. This was a significant breakthrough for the young racer on the global stage.</p>
-                        <p class="subtitle1">Champion COTFA OK-N Senior 2024</p>
-                    </div>
-                </div>
-                <div class="career__slide">
-                    <div class="career__slide--secondary">
-                        <h6>Debut in the CIK-FIA World Series</h6>
-                        <p class="body2">Markas made his debut in the final stage of the CIK-FIA World Series, finishing in
-                            the top 10. This was a significant breakthrough for the young racer on the global stage.</p>
-                        <p class="subtitle1">Champion COTFA OK-N Senior 2024</p>
-                    </div>
-                </div>
-                <div class="career__slide">
-                    <div class="career__slide--secondary">
-                        <h6>Debut in the CIK-FIA World Series</h6>
-                        <p class="body2">Markas made his debut in the final stage of the CIK-FIA World Series, finishing in
-                            the top 10. This was a significant breakthrough for the young racer on the global stage.</p>
-                        <p class="subtitle1">Champion COTFA OK-N Senior 2024</p>
-                    </div>
-                </div>
-                <div class="career__slide">
-                    <div class="career__slide--secondary">
-                        <h6>Debut in the CIK-FIA World Series</h6>
-                        <p class="body2">Markas made his debut in the final stage of the CIK-FIA World Series, finishing in
-                            the top 10. This was a significant breakthrough for the young racer on the global stage.</p>
-                        <p class="subtitle1">Champion COTFA OK-N Senior 2024</p>
-                    </div>
-                </div>
-                <div class="career__slide ">
-                    <div class="career__slide--secondary">
-                        <h6>Debut in the CIK-FIA World Series</h6>
-                        <p class="body2">Markas made his debut in the final stage of the CIK-FIA World Series, finishing in
-                            the top 10. This was a significant breakthrough for the young racer on the global stage.</p>
-                        <p class="subtitle1">Champion COTFA OK-N Senior 2024</p>
-                    </div>
-                </div>
-                <div class="career__slide">
-                    <div class="career__slide--secondary">
-                        <h6>Debut in the CIK-FIA World Series</h6>
-                        <p class="body2">Markas made his debut in the final stage of the CIK-FIA World Series, finishing in
-                            the top 10. This was a significant breakthrough for the young racer on the global stage.</p>
-                        <p class="subtitle1">Champion COTFA OK-N Senior 2024</p>
-                    </div>
-                </div>
-                <div class="career__slide">
-                    <div class="career__slide--basic">
-                        <h2>2024</h2>
-                        <h6 class="color-green">Racing</h6>
-                        <h6 class="color-red">Season</h6>
-                    </div>
-                </div>
-                <div class="career__slide">
-                    <div class="career__slide--secondary">
-                        <h6>Debut in the CIK-FIA World Series</h6>
-                        <p class="body2">Markas made his debut in the final stage of the CIK-FIA World Series, finishing in
-                            the top 10. This was a significant breakthrough for the young racer on the global stage.</p>
-                        <p class="subtitle1">Champion COTFA OK-N Senior 2024</p>
-                    </div>
-                </div>
+            <div class="career__slider-content"><?php
+                $careers_list = get_field('careers_list');
+                foreach($careers_list as $year_items){
+                    $year = $year_items['year'];
+                    $year_list = $year_items['events_by_year'];
+                    echo '<div class="career__slide active">
+                        <div class="career__slide--basic">
+                            <h2>'.$year.'</h2>
+                            <h6 class="color-green">Racing</h6>
+                            <h6 class="color-red">Season</h6>
+                        </div>
+                    </div>';
+                    foreach($year_list as $item){
+                        echo '<div class="career__slide">
+                            <div class="career__slide--secondary">
+                                <h6>'.$item['title'].'</h6>
+                                <p class="body2">'.$item['description'].'</p>
+                                <p class="subtitle1">'.$item['sub-title'].'</p>
+                            </div>
+                        </div>';
+                    }
+                }
+                ?>
             </div>
         </div>
         <div class="career__buttons-mobile">

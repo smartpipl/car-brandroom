@@ -10,6 +10,7 @@ get_header(); ?>
     <?php echo get_template_part('template-parts/home/citation'); ?>
     <?php echo get_template_part('template-parts/home/profile'); ?>
     <?php echo get_template_part('template-parts/home/cups'); ?>
+    <?php echo get_template_part('template-parts/home/careers'); ?>
     <?php echo get_template_part('template-parts/home/partners'); ?>
     <?php echo get_template_part('template-parts/home/offer'); ?>
     <?php echo get_template_part('template-parts/home/races'); ?>
